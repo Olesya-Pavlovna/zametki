@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Карелия</title>
+    <script  src='jquery-3.3.1.js'></script>
+    <link rel="stylesheet" href="dist/magnific-popup.css">
+  <script  src='dist/jquery.magnific-popup.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favi.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex1">
+            <header>
+                <a href="index.html">Главная</a>
+                <a href="#">Карелия</a>
+                <a href="altai.html"> Aлтай </a>
+            </header>
+            <h1>Карелия</h1>
+            <div class= "model content karelia-img">
+                
+                <a href="img/karelia-1.jpg"><img src="img/karelia-1.jpg" alt="Карелия"></a>
+                <a href="img/karelia-2.jpg"><img src="img/karelia-2.jpg" alt="Карелия"></a>
+                <a href="img/karelia-3.jpg"><img src="img/karelia-3.jpg" alt="Карелия"></a>
+                <a href="img/karelia-4.jpg"><img src="img/karelia-4.jpg" alt="Карелия"></a>
+                <a href="img/karelia-5.jpg"><img src="img/karelia-5.jpg" alt="Карелия"></a>
+                <a href="img/karelia-6.jpg"><img src="img/karelia-6.jpg" alt="Карелия"></a>
+            </div>
+            <div class="skrit model content karelia-img"><a href="img/karelia-7.jpg"><img src="img/karelia-7.jpg" alt="Карелия"></a>
+                <a href="img/karelia-8.jpg"><img src="img/karelia-8.jpg" alt="Карелия"></a>
+                <a href="img/karelia-9.jpg"><img src="img/karelia-9.jpg" alt="Карелия"></a>
+                <a href="img/karelia-10.jpg"><img src="img/karelia-10.jpg" alt="Карелия"></a>
+                <a href="img/karelia-11.jpg"><img src="img/karelia-11.jpg" alt="Карелия"></a>
+                <a href="img/karelia-12.jpg"><img src="img/karelia-12.jpg" alt="Карелия"></a></div>
+        
+              <div class="show-block">
+            <a  href="#">Показать ещё</a></div>
+        </div>
+        <footer> &copy; Олеся Павловна, 2018 </footer>
+    </div>
+    
+    
+    <script>
+          $(document).ready(function() {
+            $('.model').magnificPopup({
+                delegate: 'a',
+                type: 'image'
+            });
+            $('.skrit').hide();
+            $('.show-block').on('click', function(){
+                var textLink = $('.skrit').is(':visible') ? 'Показать ещё' : 'Скрыть часть';
+                $('.show-block').text(textLink);
+                $('.skrit').slideToggle();
+            });
+        });
+    </script>
+</body>
+
+</html>
+ 
